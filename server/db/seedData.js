@@ -2,7 +2,7 @@ use bodySystems;
 
 db.dropDatabase();
 
-db.systems.insert([
+db.system.insert([
   {
     name: "Endocrine",
     function: "regulate hormones",
@@ -14,4 +14,4 @@ db.systems.insert([
     primaryOrgan:  "Stomach"
   }
 ]);
-db.systems.find();
+db.system.find();

@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient
 
-var bodySystemsQueryHelper = {
+var bodySystemQueryHelper = {
   url: 'mongodb://localhost:27017/bodySystems',
   all: function (onQueryFinished) {
     MongoClient.connect(this.url, function (err, db){
@@ -12,3 +12,5 @@ var bodySystemsQueryHelper = {
     })
   }
 }
+
+module.exports = bodySystemQueryHelper

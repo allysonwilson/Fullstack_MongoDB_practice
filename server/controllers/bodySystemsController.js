@@ -1,11 +1,16 @@
-var bodySystemsQueryHelper = require('../db/bodySystemsQueryHelper.js')
+var bodySystemQueryHelper = require('../db/bodySystemQueryHelper.js')
 var express = require('express')
-var bodySystemsRouter = express.Router()
+var bodySystemRouter = new express.Router()
 
-bodySystemsRouter.get('/', function (req, res){
-  bodySystemsQueryHelper.all(function(systems){
+
+router.get('/', function(req, res){
+  
+})
+
+bodySystemRouter.get('/', function (req, res){
+  bodySystemQueryHelper.all(function(systems){
     res.json(systems)
   })
 })
 
-module.exports = bodySystemsRouter
+module.exports = bodySystemRouter
